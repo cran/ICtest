@@ -82,6 +82,8 @@ A list of class ictest inheriting from class htest containing:
 
 \references{
 \cite{Nordhausen, K., Oja, H. and Tyler, D.E. (2016), Asymptotic and bootstrap tests for subspace dimension, <https://arxiv.org/abs/1611.04908>.}
+
+\cite{Nordhausen, K., Oja, H., Tyler, D.E. and Virta, J. (2017), Asymptotic and Bootstrap Tests for the Dimension of the Non-Gaussian Subspace, Signal Processing Letters, 24, 887--891. <doi:10.1109/LSP.2017.2696880 >.}
 }
 \author{
 Klaus Nordhausen

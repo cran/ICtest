@@ -1,5 +1,11 @@
 LOG of the CHANGES in the package ICtest
 
+Version 0.3:
+* several bug fixes
+* improving documentation
+* new function PCAschott
+* adding the ladle methdology together with methods
+
 
 Version 0.2:
 

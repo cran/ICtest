@@ -132,7 +132,8 @@ PCA_subsphere_boot_s2 <- function(X, S1,k, n.boot, Sargs)
     PARAMETER <- n.boot
     names(PARAMETER) <- c("replications")
     LAMBDA <- sqrt(c(D[1:k], rep(meanEVpk,p-k)))
-    LAMBDA.inv <- 1/LAMBDA
+    #LAMBDA.inv <- 1/LAMBDA
+    LAMBDA.inv <- 1/D
     Z <- Xc %*% W
     S <- Z
     colnames(S) <- paste0("PC.",1:p)

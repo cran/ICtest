@@ -51,7 +51,7 @@ The first strategy has the following steps:
 \item \code{s.boot="B2"}: 
 The second strategy has the following steps:
 \enumerate{
-\item Scale each principal component using the matrix \eqn{D^*}, i.e. \eqn{Z = S D^*}. 
+\item Scale each principal component using the matrix \eqn{D}, i.e. \eqn{Z = S D}. 
 \item Take a bootstrap sample \eqn{Z^*} of size \eqn{n} from \eqn{Z}.
 \item Every observation in \eqn{Z^*} is transformed with a different random orthogonal matrix.
 \item Recreate \eqn{X^*= Z^* {D^*}^{-1} W}.

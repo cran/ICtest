@@ -36,7 +36,8 @@ PCAasymp <- function(X, k, scatter="cov", ...)
     ALTERNATIVE <- paste0("the last ",p-k, " eigenvalues are not equal")
 
     W <- EV$vectors
-    S <- tcrossprod(Xc,W)
+    # S <- tcrossprod(Xc,W)
+    S <- Xc %*% W
     colnames(S) <- paste0("PC.",1:p)
 
     RES <- list(statistic = TESTSTATISTIC, p.value = PVAL, parameter = PARAMETER, method=METHOD, data.name=DNAME, alternative = ALTERNATIVE, k=k, W=W, S=S, D=EV.VALUES, 
