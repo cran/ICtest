@@ -11,5 +11,15 @@ ggplot.ictest <- function (data, mapping=aes(), mapvar=NULL, which="all", ..., e
    dummy <- data.frame(S)
  }
  original_columns <- colnames(S)
- ggpairs(dummy, mapping=mapping, columns = original_columns, ...)
+ if (any(class(S)=="mts")) {
+   p <- ncol(S)
+   n <- nrow(S)
+   S_long <- data.frame(var = c(S), lat = factor(rep(1:p, each = n), labels = sapply(1:p, function(x) paste0("Series ", x))), time = rep(1:n, times = p))
+   ggplot(S_long, aes(x = time, y = var)) +
+     geom_line() +
+     facet_wrap(~ lat, scales = "free_y", ncol = ceiling((p + 1)/5)) +
+     labs(x = "Time", y = "")
+ } else {
+   ggpairs(dummy, mapping=mapping, columns = original_columns, ...)
+ }
 }

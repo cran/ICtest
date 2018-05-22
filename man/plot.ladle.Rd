@@ -18,7 +18,7 @@ This function either plots all of the components or only this considered interes
           plotted. If \code{"k"}, then only the  k components are
           plotted, which are considered interesting according to the ladle estimator. 
           This is only meaningful if the estimated 'k' is at least 2.}
-  \item{\dots}{other arguments passed on to \code{link{pairs}}.}
+  \item{\dots}{other arguments passed on to \code{\link{pairs}} or \code{\link{plot.ts}}.}
 }
 
 \author{
@@ -26,7 +26,7 @@ Klaus Nordhausen
 }
 
 \seealso{
-\code{link{pairs}}
+\code{\link{pairs}}, \code{\link{plot.ts}}
 }
 \examples{
 n <- 1000

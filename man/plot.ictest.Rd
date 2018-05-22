@@ -5,8 +5,7 @@
 Scatterplot Matrix for a ictest Object
 }
 \description{
-Plots the pairwise scatter plot matrix of the underlying components for an object of class ictest. The user can choose if only
-the components considered interesting or all of them should be plotted.
+For an object of class ictest, plots either the pairwise scatter plot matrix, or the time series plots of the underlying components. The user can choose if only the components considered interesting or all of them should be plotted.
 }
 \usage{
 \method{plot}{ictest}(x, which = "all", ...)
@@ -16,16 +15,20 @@ the components considered interesting or all of them should be plotted.
   \item{x}{object of class ictest}
   \item{which}{if \code{"all"}, then all components of S in the ictest object are plotted. If \code{"k"}, then only the first k components are plotted,
    where the value of \code{k} is taken from the ictest object. This is only meaningful if \code{k} was at least 2.}
-  \item{\dots}{other arguments passed on to \code{\link{pairs}}.}
+  \item{\dots}{other arguments passed on to \code{\link{pairs}} or \link{plot.ts}}.
 }
 
+\details{
+If \code{x} has the class \code{mts} then a time series plot will be plotted. Otherwise, the pairwise scatter plot matrix will be plotted.
+
+}
 
 \author{
 Klaus Nordhausen
 }
 
 \seealso{
-\code{\link{ggplot.ictest}, \link{pairs}}
+\code{\link{ggplot.ictest}, \link{pairs}, \link{plot.ts}}
 }
 \examples{
 n <- 200

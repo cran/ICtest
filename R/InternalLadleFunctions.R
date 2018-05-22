@@ -41,7 +41,8 @@ plot.ladle <- function (x, which = "all", ...)
       plot(S, ...)
     }
     else {
-      pairs(S, ...)
+      if (any(class(S)=="mts")) {plot.ts(S)} else {
+        pairs(S, ...)}
     }
   }
 

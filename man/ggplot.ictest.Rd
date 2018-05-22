@@ -5,7 +5,7 @@
 Scatterplot Matrix for a ictest Object using ggplot2
 }
 \description{
-Plots the pairwise scatter plot matrix of the underlying components for an object of class ictest using \code{ggpairs} from GGally. The user can choose if only the components considered interesting or all of them should be plotted. Aesthetics can be passed to ggpairs as well.
+For an object of class ictest, plots either the pairwise scatter plot matrix using \code{ggpairs} from GGally, or the time series plots of the underlying components using ggplot2. The user can choose if only the components considered interesting or all of them should be plotted. Aesthetics can be passed to ggpairs as well.
 }
 \usage{
 \method{ggplot}{ictest}(data, mapping = aes(), mapvar = NULL, which = "all", ..., 
@@ -14,12 +14,17 @@ Plots the pairwise scatter plot matrix of the underlying components for an objec
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{object of class ictest}
-  \item{mapping}{aesthetic mapping, see documentation for \code{\link{ggpairs}}.}
-  \item{mapvar}{data.frame of the external variables used by the aesthetic mappings.}
+  \item{mapping}{aesthetic mapping, see documentation for \code{\link{ggpairs}}. If \code{x} has the class \code{mts} then this argument is not used.}
+  \item{mapvar}{data.frame of the external variables used by the aesthetic mappings. If \code{x} has the class \code{mts} then this argument is not used.}
   \item{which}{if \code{"all"}, then all components of S in the ictest object are plotted. If \code{"k"}, then only the first k components are plotted,
    where the value of \code{k} is taken from the ictest object. This is only meaningful if \code{k} was at least 2.}
-  \item{...}{arguments passed on to \code{\link{ggpairs}}.}
+  \item{...}{arguments passed on to \code{\link{ggpairs}}. If \code{x} has the class \code{mts} then this argument is not used.}
   \item{environment}{not used but needed for consistency.}
+}
+
+\details{
+If \code{x} has the class \code{mts} then a time series plot will be plotted using ggplot2. Otherwise, a pairwise scatter plot matrix will be plotted using GGally.
+
 }
 
 

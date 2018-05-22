@@ -1,5 +1,8 @@
 LOG of the CHANGES in the package ICtest
 
+Version 0.3-1:
+* modfiying some plotting functions to use time series plots if S is a multivariate time series
+
 Version 0.3:
 * several bug fixes
 * improving documentation
