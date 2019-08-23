@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // symmetricPower_C
 arma::mat symmetricPower_C(arma::mat x, double r);
-RcppExport SEXP ICtest_symmetricPower_C(SEXP xSEXP, SEXP rSEXP) {
+RcppExport SEXP _ICtest_symmetricPower_C(SEXP xSEXP, SEXP rSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,7 +20,7 @@ END_RCPP
 }
 // computeObj_C
 arma::vec computeObj_C(arma::mat x, arma::vec nl, arma::vec alpha);
-RcppExport SEXP ICtest_computeObj_C(SEXP xSEXP, SEXP nlSEXP, SEXP alphaSEXP) {
+RcppExport SEXP _ICtest_computeObj_C(SEXP xSEXP, SEXP nlSEXP, SEXP alphaSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -33,7 +33,7 @@ END_RCPP
 }
 // computeTVec_C
 arma::vec computeTVec_C(arma::vec u, arma::mat x, arma::vec nl, arma::vec alpha);
-RcppExport SEXP ICtest_computeTVec_C(SEXP uSEXP, SEXP xSEXP, SEXP nlSEXP, SEXP alphaSEXP) {
+RcppExport SEXP _ICtest_computeTVec_C(SEXP uSEXP, SEXP xSEXP, SEXP nlSEXP, SEXP alphaSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -44,4 +44,16 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(computeTVec_C(u, x, nl, alpha));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_ICtest_symmetricPower_C", (DL_FUNC) &_ICtest_symmetricPower_C, 2},
+    {"_ICtest_computeObj_C", (DL_FUNC) &_ICtest_computeObj_C, 3},
+    {"_ICtest_computeTVec_C", (DL_FUNC) &_ICtest_computeTVec_C, 4},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_ICtest(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }

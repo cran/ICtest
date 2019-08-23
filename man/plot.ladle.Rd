@@ -18,7 +18,12 @@ This function either plots all of the components or only this considered interes
           plotted. If \code{"k"}, then only the  k components are
           plotted, which are considered interesting according to the ladle estimator. 
           This is only meaningful if the estimated 'k' is at least 2.}
-  \item{\dots}{other arguments passed on to \code{\link{pairs}} or \code{\link{plot.ts}}.}
+  \item{\dots}{other arguments passed on to \code{\link{pairs}} if the components are a numeric matrix or to \code{\link{plot.ts}}, \code{\link[zoo]{plot.zoo}} or \code{\link[xts]{plot.xts}} if the components are from the corresponding class.}
+}
+
+\details{
+If the component matrix has the class \code{mts}, \code{xts} or \code{zoo}, then a time series plot will be plotted. Otherwise, the pairwise scatter plot matrix will be plotted.
+
 }
 
 \author{
@@ -26,7 +31,7 @@ Klaus Nordhausen
 }
 
 \seealso{
-\code{\link{pairs}}, \code{\link{plot.ts}}
+\code{\link{pairs}}, \code{\link{plot.ts}}, \code{\link[zoo]{plot.zoo}}, \code{\link[xts]{plot.xts}}
 }
 \examples{
 n <- 1000

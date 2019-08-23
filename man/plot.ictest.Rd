@@ -15,11 +15,11 @@ For an object of class ictest, plots either the pairwise scatter plot matrix, or
   \item{x}{object of class ictest}
   \item{which}{if \code{"all"}, then all components of S in the ictest object are plotted. If \code{"k"}, then only the first k components are plotted,
    where the value of \code{k} is taken from the ictest object. This is only meaningful if \code{k} was at least 2.}
-  \item{\dots}{other arguments passed on to \code{\link{pairs}} or \link{plot.ts}}.
+  \item{\dots}{other arguments passed on to \code{\link{pairs}} if the components are a numeric matrix or to \code{\link{plot.ts}}, \code{\link[zoo]{plot.zoo}} or \code{\link[xts]{plot.xts}} if the components are from the corresponding class.}
 }
 
 \details{
-If \code{x} has the class \code{mts} then a time series plot will be plotted. Otherwise, the pairwise scatter plot matrix will be plotted.
+If the component matrix has the class \code{mts}, \code{xts} or \code{zoo}, then a time series plot will be plotted. Otherwise, the pairwise scatter plot matrix will be plotted.
 
 }
 
@@ -28,7 +28,7 @@ Klaus Nordhausen
 }
 
 \seealso{
-\code{\link{ggplot.ictest}, \link{pairs}, \link{plot.ts}}
+\code{\link{ggplot.ictest}, \link{pairs}, \link{plot.ts}, \link[zoo]{plot.zoo}, \link[xts]{plot.xts}}
 }
 \examples{
 n <- 200

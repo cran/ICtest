@@ -2,14 +2,14 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 symmetricPower_C <- function(x, r) {
-    .Call('ICtest_symmetricPower_C', PACKAGE = 'ICtest', x, r)
+    .Call(`_ICtest_symmetricPower_C`, x, r)
 }
 
 computeObj_C <- function(x, nl, alpha) {
-    .Call('ICtest_computeObj_C', PACKAGE = 'ICtest', x, nl, alpha)
+    .Call(`_ICtest_computeObj_C`, x, nl, alpha)
 }
 
 computeTVec_C <- function(u, x, nl, alpha) {
-    .Call('ICtest_computeTVec_C', PACKAGE = 'ICtest', u, x, nl, alpha)
+    .Call(`_ICtest_computeTVec_C`, u, x, nl, alpha)
 }
 

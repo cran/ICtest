@@ -1,4 +1,4 @@
-ggplot.ictest <- function (data, mapping=aes(), mapvar=NULL, which="all", ..., environment=parent.frame())
+ggplot.ladle <- function (data, mapping=aes(), mapvar=NULL, which="all", ..., environment=parent.frame())
 {
  x <- data
  which <- match.arg(which, c("all", "k"))
