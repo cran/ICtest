@@ -97,11 +97,13 @@ Klaus Nordhausen
 n <- 200
 X <- cbind(rnorm(n, sd = 2), rnorm(n, sd = 1.5), rnorm(n), rnorm(n), rnorm(n))
 
-TestCov <- PCAboot(X, k = 2)
+# for demonstration purpose the n.boot is chosen small, should be larger in real applications
+
+TestCov <- PCAboot(X, k = 2, n.boot=30)
 TestCov
 
-# for demonstration purpose the n.boot is chosen small, should be larger in real applications
-TestTM <- PCAboot(X, k = 1, n.boot=80, s.boot = "B2", S = "tM", Sargs = list(df=2))
+
+TestTM <- PCAboot(X, k = 1, n.boot=30, s.boot = "B2", S = "tM", Sargs = list(df=2))
 TestTM
 
 }

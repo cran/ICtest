@@ -1,4 +1,4 @@
-## ---- fig.show = "hold", fig.width = 7, fig.height = 7-------------------
+## ---- fig.show = "hold", fig.width = 7, fig.height = 7------------------------
 set.seed(1234)
 n <- 200
 p <- 10
@@ -13,10 +13,10 @@ SIRasympk2 <- SIRasymp(X,y,2)
 screeplot(SIRasympk2)
 SIRasympk2
 
-## ---- message = FALSE, warning = FALSE, fig.show = "hold"----------------
+## ---- message = FALSE, warning = FALSE, fig.show = "hold"---------------------
 SIRbootk2 <- SIRboot(X,y,2)
 SIRbootk2
 
-## ---- fig.show = "hold", fig.width = 7, fig.height = 7-------------------
+## ---- fig.show = "hold", fig.width = 7, fig.height = 7------------------------
 pairs(cbind(y, components(SIRbootk2, which="k")))
 

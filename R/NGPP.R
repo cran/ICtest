@@ -98,7 +98,7 @@ function(X, k, nl = c("skew", "pow3"), alpha = 0.8, method="symm", eps = 1e-6, v
   obj <- computeObj_C(S, nl_int, alpha)
   obj_order <- order(obj, decreasing=TRUE)
   
-  S_order <- S[, obj_order]
+  S_order <- S[, obj_order, drop = FALSE]
   colnames(S_order) <- sapply(1:k, function(i) paste("IC.", i, sep=""))
 
   res <- list(W = U[obj_order, ]%*%symmetricPower_C(cov_x, -0.5),
