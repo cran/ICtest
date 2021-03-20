@@ -1,5 +1,5 @@
-c5b91b760d6ccbc0b3a1fc0a87c3fe03 *DESCRIPTION
-a4e0d6189daec2847d9f61f18f1bb414 *NAMESPACE
+94969dceff70b7de3d49ef647bbd3ba9 *DESCRIPTION
+c2e5acbe0a43b4c7af2850b2f6762603 *NAMESPACE
 e27bee3906ab987444ee2a665b5f623b *R/FOBIasymp.R
 4256b017039797cffa55575c80bc0530 *R/FOBIboot.R
 8bd37689d08266939e4e9ae23d72a4c5 *R/FOBIladle.R
@@ -21,7 +21,8 @@ ac307701ecaecc995c1f5f0012a58285 *R/covSIR.R
 e20f32b7479e8d693fe6363ace6caf14 *R/ggladleplot.R
 e6a0b736cd00673eb8c64571c6701efc *R/ggplot.ictest.R
 c70c3214048cc127a56b563a5889f463 *R/ggplot.ladle.R
-1f3b2aaac42ba5b6e166807a178f19f1 *R/ggscreeplot.R
+81b90312cf1f788849b4e2876bfb6f95 *R/ggscreeplot.R
+e8085af8691aa421551b728dba7c9070 *R/ggscreeplot.ictest.R
 91edc9f5c308f4fe8b95645cded0d6c0 *R/imageToData.R
 2d46d54892e1de8d74940fa017988473 *R/ladle.R
 7cc535b62fb575f9ff62d7347b337aa5 *R/ladleplot.R
@@ -32,7 +33,7 @@ af28a13f83e4297a7e75612ced531bc2 *R/rMU.R
 c20f30cc38fccc5797f546ed0ecfa04e *R/screeplot.ictest.R
 5d9cab57e5892ccb6bcdab396dcf34f3 *R/whiten.R
 e3391ef4a42d0c418202f8ee7251b9a4 *build/vignette.rds
-5215ff5c0052c81a635c0fe0bebb8d2a *inst/ChangeLog
+1bf27a635a2bb8badbacc82a4141ec7f *inst/ChangeLog
 a1b2423c6c559c04234c1f9f74ac0afb *inst/doc/ICA.R
 3f7cce1a7a7167f75fa2fe7c37b83f74 *inst/doc/ICA.Rmd
 502a26ff6f3bb798ee5fdd443186e3ac *inst/doc/ICA.html
@@ -62,7 +63,8 @@ e7a8bb650819d6617eb049f5c98a59a2 *man/components.ictest.Rd
 9750b634cc9ef11612d6dc41d14dc519 *man/ggladleplot.Rd
 38ddfd621bb99a46b1c3202df3525316 *man/ggplot.ictest.Rd
 a9c807668d18c7b4905186568ec7d7ed *man/ggplot.ladle.Rd
-f2da38970988b1369954f00e2cc9e628 *man/ggscreeplot.Rd
+0782e70e53afa91eb2d3b50f856a02cc *man/ggscreeplot.Rd
+f8ffa7b74b6019965d7383fbba56839c *man/ggscreeplot.ictest.Rd
 bf79739213bf2ce505bcce651fe21851 *man/ladle.Rd
 84d5032fdd69a8aa9599301ce7e1f736 *man/ladleplot.Rd
 45c46959725e69084e972456ab95a108 *man/plot.ictest.Rd

@@ -1,5 +1,8 @@
 LOG of the CHANGES in the package ICtest
 
+Version 0.3-4:
+* Added a new generic function ggscreeplot and made the earlier ggscreeplot its method for the class ictest
+
 Version 0.3-3:
 * fixed NGPP so that it also allows extracting only a single direction, k = 1
 * updated some documentation
