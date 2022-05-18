@@ -79,8 +79,8 @@ PCA_subsphere_boot_s1 <- function(X, k, S1, n.boot, Sargs)
     Z <- Xc %*% W
     # Column names for the variables
     colnames(Z) <- paste0("PC.",1:p)
-    Z1 <- Z[ ,1:k, drop=FALSE]
-    Z2 <- Z[ ,ind, drop=FALSE]
+    Z1 <- Z[ , seq_len(k), drop=FALSE]
+    Z2 <- Z[ , ind, drop=FALSE]
 
     TEST.STATISTICS.Xstar <- t(replicate(n.boot, PCA_boot_orth_s1(Z1, Z2, S1, W, MEAN, k, Sargs=Sargs)))
     
@@ -131,7 +131,7 @@ PCA_subsphere_boot_s2 <- function(X, S1,k, n.boot, Sargs)
     names(TEST.STATISTIC.X) = "T"
     PARAMETER <- n.boot
     names(PARAMETER) <- c("replications")
-    LAMBDA <- sqrt(c(D[1:k], rep(meanEVpk,p-k)))
+    LAMBDA <- sqrt(c(D[seq_len(k)], rep(meanEVpk,p-k)))
     #LAMBDA.inv <- 1/LAMBDA
     LAMBDA.inv <- 1/D
     Z <- Xc %*% W

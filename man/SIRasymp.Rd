@@ -41,7 +41,7 @@ A list of class ictest inheriting from class htest containing:
   \item{MU}{the location of the data which was substracted before calculating the components.}
 }
 \references{
-\cite{Nordhausen, K., Oja, H. and Tyler, D.E. (2016), Asymptotic and bootstrap tests for subspace dimension, <https://arxiv.org/abs/1611.04908>.}
+\cite{Nordhausen, K., Oja, H. and Tyler, D.E. (2022), Asymptotic and Bootstrap Tests for Subspace Dimension, Journal of Multivariate Analysis, 188, 104830. <doi:10.1016/j.jmva.2021.104830>.}
 }
 \author{
 Klaus Nordhausen

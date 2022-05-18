@@ -105,7 +105,7 @@ ICA_subnormal_boot_S1 <- function(X,k, n.boot = 200)
 
     Z <- tcrossprod(Xc, W)
     
-    Z1 <- Z[,0:k, drop=FALSE]
+    Z1 <- Z[,seq_len(k), drop=FALSE]
 
     Winv <- solve(W)
 
@@ -153,7 +153,7 @@ ICA_subnormal_boot_S2 <- function(X,k, n.boot = 200)
     Z <- tcrossprod(Xc, W)
     colnames(Z) <- paste0("IC.",1:p)
     
-    Z1 <- Z[,0:k, drop=FALSE]
+    Z1 <- Z[,seq_len(k), drop=FALSE]
 
     Winv <- solve(W)
 

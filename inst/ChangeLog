@@ -1,5 +1,11 @@
 LOG of the CHANGES in the package ICtest
 
+Version 0.3-5:
+* Added function ICSboot
+* Added function PCAaug
+* Fixed some bug in bootstrapping functions when k=0
+
+
 Version 0.3-4:
 * Added a new generic function ggscreeplot and made the earlier ggscreeplot its method for the class ictest
 
