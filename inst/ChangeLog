@@ -1,5 +1,13 @@
 LOG of the CHANGES in the package ICtest
 
+Version 0.3-6:
+
+* Fixing some missing links in help files when linking to functions in external packages
+* Fixing a bug in rorth
+* Adding K. Perkonoja as package author
+* New function kSearch including print and summary methods
+
+
 Version 0.3-5:
 * Added function ICSboot
 * Added function PCAaug
