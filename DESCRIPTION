@@ -2,8 +2,8 @@ Package: ICtest
 Type: Package
 Title: Estimating and Testing the Number of Interesting Components in
         Linear Dimension Reduction
-Version: 0.3-6
-Date: 2025-05-27
+Version: 0.3-7
+Date: 2026-04-01
 Authors@R: 
     c(person(given = "Klaus",
              family = "Nordhausen",
@@ -37,7 +37,7 @@ Suggests: knitr, rmarkdown, fICA
 VignetteBuilder: knitr
 RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2025-05-27 11:30:35 UTC; nordklau
+Packaged: 2026-04-01 11:19:39 UTC; nordklau
 Author: Klaus Nordhausen [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-3758-8501>),
   Hannu Oja [aut] (ORCID: <https://orcid.org/0000-0002-4945-5976>),
@@ -46,4 +46,4 @@ Author: Klaus Nordhausen [aut, cre] (ORCID:
   David E. Tyler [aut],
   Joni Virta [aut] (ORCID: <https://orcid.org/0000-0002-2150-2769>)
 Repository: CRAN
-Date/Publication: 2025-05-27 23:20:05 UTC
+Date/Publication: 2026-04-02 08:20:08 UTC

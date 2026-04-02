@@ -1,5 +1,10 @@
 LOG of the CHANGES in the package ICtest
 
+Version 0.3-7:
+
+* Updating makevars files
+* Removing components as a generic function as it is now a generic function in ICS which is imported
+
 Version 0.3-6:
 
 * Fixing some missing links in help files when linking to functions in external packages
