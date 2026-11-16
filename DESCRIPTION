@@ -2,8 +2,8 @@ Package: ICtest
 Type: Package
 Title: Estimating and Testing the Number of Interesting Components in
         Linear Dimension Reduction
-Version: 0.3-7
-Date: 2026-04-01
+Version: 0.3-8
+Date: 2026-11-16
 Authors@R: 
     c(person(given = "Klaus",
              family = "Nordhausen",
@@ -33,11 +33,13 @@ Imports: stats, graphics, Rcpp (>= 0.12.3), ICSNP, survey, GGally, png,
         zoo, xts, RcppRoll, mvtnorm, progress, utils
 Description: For different linear dimension reduction methods like principal components analysis (PCA), independent components analysis (ICA) and supervised linear dimension reduction tests and estimates for the number of interesting components (ICs) are provided.
 License: GPL (>= 2)
+URL: https://github.com/klauschN/ICtest
+BugReports: https://github.com/klauschN/ICtest/issues
 Suggests: knitr, rmarkdown, fICA
 VignetteBuilder: knitr
 RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2026-04-01 11:19:39 UTC; nordklau
+Packaged: 2026-11-16 09:29:39 UTC; klaus
 Author: Klaus Nordhausen [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-3758-8501>),
   Hannu Oja [aut] (ORCID: <https://orcid.org/0000-0002-4945-5976>),
@@ -46,4 +48,4 @@ Author: Klaus Nordhausen [aut, cre] (ORCID:
   David E. Tyler [aut],
   Joni Virta [aut] (ORCID: <https://orcid.org/0000-0002-2150-2769>)
 Repository: CRAN
-Date/Publication: 2026-04-02 08:20:08 UTC
+Date/Publication: 2026-11-16 10:40:02 UTC
